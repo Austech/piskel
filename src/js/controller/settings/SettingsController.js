@@ -14,6 +14,10 @@
       template : 'templates/settings/export.html',
       controller : ns.exportimage.ImageExportController
     },
+    'export-advanced' : {
+      template : 'templates/settings/export-advanced.html',
+      controller : ns.exportimage.ImageExportAdvancedController
+    },
     'import' : {
       template : 'templates/settings/import.html',
       controller : ns.ImportController

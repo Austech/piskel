@@ -5,7 +5,6 @@
     this.piskelController = piskelController;
     this.pngExportController = new ns.PngExportController(piskelController);
     this.gifExportController = new ns.GifExportController(piskelController);
-    this.cExportController = new ns.CExportController(piskelController);
   };
 
   pskl.utils.inherit(ns.ImageExportController, pskl.controller.settings.AbstractSettingController);
@@ -20,13 +19,11 @@
 
     this.pngExportController.init();
     this.gifExportController.init();
-    this.cExportController.init();
   };
 
   ns.ImageExportController.prototype.destroy = function () {
     this.pngExportController.destroy();
     this.gifExportController.destroy();
-    this.cExportController.destroy();
     this.superclass.destroy.call(this);
   };
 
